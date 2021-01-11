@@ -1,0 +1,187 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<style>
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+<div class="nav">
+<input type="checkbox" id="nav-check">
+<div class="nav-header">
+    <div class="nav-title">
+        <a href="index.html" style="text-decoration: none;color: white">OSOC Github Demo</a>
+    </div>
+</div>
+<div class="nav-btn">
+    <label for="nav-check">
+    <span></span>
+    <span></span>
+    <span></span>
+    </label>
+</div>
+
+<div class="nav-links">
+      <a href="index.html">Instructions</a>
+      <a href="resources.html">Resources</a>
+      <a href="snapshots.html">Snapshots</a>
+</div>
+</div>
+
+<div class="photo-gallery">
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="img/1.png">
+          <img src="img/1.png" alt="GitHub SignUp" width="600" height="400">
+        </a>
+        <div class="desc">GitHub SignUp</div>
+      </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="img/2.png">
+          <img src="img/2.png" alt="Creating a Repository" width="600" height="400">
+        </a>
+        <div class="desc">Creating a Repository</div>
+      </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="img/3.png">
+          <img src="img/3.png" alt="Set up Local Folder" width="600" height="400">
+        </a>
+        <div class="desc">Setup Local Folder</div>
+    </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="img/4.png">
+          <img src="img/4.png" alt="Create a text file" width="600" height="400">
+        </a>
+        <div class="desc">Create a text file</div>
+    </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="img/5.png">
+          <img src="img/5.png" alt="Add to staging area" width="600" height="400">
+        </a>
+        <div class="desc">Add to staging area</div>
+    </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="img/6.png">
+          <img src="img/6.png" alt="Commiting to local repository" width="600" height="400">
+        </a>
+        <div class="desc">Commiting to local repository</div>
+    </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="img/7.png">
+          <img src="img/7.png" alt="Push to Github Repo" width="600" height="400">
+        </a>
+        <div class="desc">Push to Github</div>
+    </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="img/8.png">
+          <img src="img/8.png" alt="Refresh the Github Repo" width="600" height="400">
+        </a>
+        <div class="desc">Refresh the github repo</div>
+    </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="img/9.png">
+          <img src="img/9.png" alt="Creating a new branch" width="600" height="400">
+        </a>
+        <div class="desc">Creating a new branch</div>
+    </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="img/10.png">
+          <img src="img/10.png" alt="Switching to main branch" width="600" height="400">
+        </a>
+        <div class="desc">Switching to main branch</div>
+    </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="img/11.png">
+          <img src="img/11.png" alt="Merging into main branch" width="600" height="400">
+        </a>
+        <div class="desc">Merging into main branch</div>
+    </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="img/12.png">
+          <img src="img/12.png" alt="Deleting experimental branch" width="600" height="400">
+        </a>
+        <div class="desc">Deleting experimental branch</div>
+    </div>
+</div>
+
+</div>
+</body>
+</html>

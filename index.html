@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Demo</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div class="nav-title">
+        <a href="index.html" style="text-decoration: none;color: white">OSOC Github Demo</a>
+      </div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    
+    <div class="nav-links">
+      <a href="index.html">Instructions</a>
+      <a href="resources.html">Resources</a>
+      <a href="snapshots.html">Snapshots</a>
+    </div>
+  </div>
+  <div class="stackedit__html"><h1 id="div-aligncenterprepared-by-team-osocdiv"><div align="center">Prepared by Team OSOC</div></h1>
+<h1 id="div-aligncenterbasic-git-workflow-with-githubdiv"><div align="center">Basic Git Workflow with GitHub</div></h1>
+<h2 id="div-aligncentergetting-started-with-githubdiv"><div align="center">Getting Started with GitHub</div></h2>
+<ol>
+<li>Navigate to <a href="https://www.github.com">https://www.github.com</a></li>
+<li>Create an account or sign in if you already have an account.</li>
+</ol>
+<h2 id="div-aligncentercreating-a-new-repository-in-githubdiv"><div align="center">Creating a new repository in GitHub</div></h2>
+<ol>
+<li>After signing in, click on the GitHub Logo and click on the <code>New Repository</code> button.</li>
+<li>Name of the repository should be meaningful and short with no spaces, can use ‘-’ symbol between words.</li>
+<li>For the time being name it as <code>github-demo</code>.</li>
+<li>Give the description according to yourself.</li>
+<li>Check the <code>public</code> radio button, so that your repository will be publicly seen.</li>
+<li>Click on the “<strong>Initialize this repository with a README</strong>”</li>
+<li>Click on the <code>Create Repository</code> button.</li>
+</ol>
+<h1 id="div-aligncenterpreparing-our-local-systemdiv"><div align="center">Preparing our local system</div></h1>
+<h2 id="div-aligncenterset-up-the-project-folderdiv"><div align="center">Set up the project folder</div></h2>
+<ol>
+<li>Open the command line (For Linux Users) or Git Bash if you are on windows.</li>
+<li>Navigate to a directory of your choice using the <code>cd</code> command.</li>
+<li>After navigating to a directory of your choice, create a <code>projects</code> directory by using the following command: <code>mkdir projects</code></li>
+<li>Navigate to the projects directory: <code>cd projects</code></li>
+</ol>
+<h2 id="div-aligncentergit-configurationdiv"><div align="center">Git Configuration</div></h2>
+<ol>
+<li>Setting up user name: <code>git config --global user.name "&lt;Insert you name here&gt;"</code>.</li>
+<li>Setup your email address used to sign up for GitHub: <code>git config --global user.email "email@example.com"</code>.</li>
+<li>Confirm your credentials using: <code>git config --global --list</code>.</li>
+</ol>
+<h2 id="div-aligncentercopy-the-repository-from-github-to-your-local-machinediv"><div align="center">Copy the repository from GitHub to your local machine</div></h2>
+<h3 id="div-aligncentercloning-a-repository-to-local-machinediv"><div align="center">Cloning a Repository to local machine</div></h3>
+<ol>
+<li>Locate the cloning options on the repository you just created on github and copy the URL for your repository.</li>
+<li>It will be something like "<a href="https://www.github.com/username/repository-name.git">https://www.github.com/username/repository-name.git</a></li>
+<li>Now come back to the command line on your local machine and type the following command: <code>git clone &lt;repository-link&gt;</code>.</li>
+<li>It will make a full copy of your repository on GitHub to your local machine.</li>
+<li>Cloning will automatically create a folder with the repository name inside your projects folder.You can confirm it by typing <code>ls</code> inside your projects folder.</li>
+<li>Navigate to the repository using the <code>cd</code> command.</li>
+<li><code>cd github-demo</code></li>
+<li>After navigating to the folder type: <code>ls</code> and then you will see a file named <code>README.md</code></li>
+</ol>
+<h2 id="div-aligncenterthe-first-commitdiv"><div align="center">The First Commit</div></h2>
+<ol>
+<li>Create a file named <code>start.txt</code> and add some content to it.</li>
+<li>Use the following command <code>echo "This is a simple text file" &gt;&gt; start.txt</code></li>
+<li>You can see the file in your working directory by using <code>ls</code>.</li>
+<li>To see the contents of the file that you just created, we can use the <code>cat</code> command as: <code>cat start.txt</code></li>
+<li>Now to see the status of your git repository you can use the <code>git status</code> command and you will see that you have an untracked file “start.txt” that you just created, which means that this file is not yet included in your git repository.</li>
+<li>To <strong>add</strong> it to your git repo, first of all you will have to bring it to the staging area and it can be done using: <code>git add start.txt</code></li>
+<li>Again if you check the status using <code>git status</code> then you can see that the file now is in the staging area ready to be <strong>committed</strong>.</li>
+<li>To commit the file to the repository we use the <code>git commit</code> command as: <code>git commit -m "Added start text file"</code>.</li>
+<li>In the above command <code>-m</code> means the commit message which is to identify each commit uniquely.Commit message should be very concise and should be clearly indicating  the nature of the commit.<br>
+10.Now check the status using the <code>git status</code> command and you will see that there is nothing to commit and the working directory is clean.This is how a commit is done.</li>
+</ol>
+<h2 id="div-aligncenterpublishing-changes-back-to-githubdiv"><div align="center">Publishing Changes back to GitHub</div></h2>
+<p>After you have done your first commit, you can publish the changes to your GitHub repository,since the commit you have done is still local and the remote repository on GitHub will not be reflecting the changes that you have done on your local machine at this point of time.</p>
+<ol>
+<li>We can do this by using the <code>git push</code> command. This command takes two arguments, the first one being the name of the GitHub copy of the repository (usually named ‘origin’ )and the second being the local branch of the repository on your machine (usually named ‘main’).</li>
+<li>The command is: <code>git push origin main</code>,where origin refers to the GitHub copy of our repository and main refers to our default and only branch in our local repository.</li>
+<li>As you type this command and press Enter, you will be prompted to enter the username and password of your GitHub account.</li>
+<li>If everything went correctly then after refreshing your browser where you have opened the GitHub repository you will be able to see that the file you created is now being added to your GitHub repository.</li>
+</ol>
+<h2 id="div-aligncentergit-branching-and-mergingdiv"><div align="center">Git Branching and Merging</div></h2>
+<p>Branches are meant to work on different aspects of the same projects simultaneously without affecting the current workflow.Suppose you are working on a project and you need to test out an experimental feature but do not want to add it to your project just yet. So what you can do is create a branch of your project, work on the experimental feature in this branch and when the feature is thoroughly tested, then merge this branch to your main branch of the project.</p>
+<ol>
+<li>To create a new branch(say “experimental”) and switch to it at the same time run <code>git checkout -b experimental</code>.This is shorthand for:</li>
+</ol>
+<pre><code>git branch experimental
+git checkout experimental
+</code></pre>
+<ol start="2">
+<li>Let us create a new file in this branch:</li>
+</ol>
+<pre><code>echo "This is an experimental text file" &gt;&gt; new-file.txt
+</code></pre>
+<ol start="3">
+<li>Add this file to the staging area and commit:</li>
+</ol>
+<pre><code>git add new-file.txt
+git commit -m "new file added"
+</code></pre>
+<p>After this if you switch to the main branch you can see that the “new-file.txt” is not present in this branch.<br>
+4. Now, to merge the experimental branch with the main branch we need to use the <code>git merge</code> command after checking out the main branch.</p>
+<pre><code>git checkout main
+git merge experimental
+</code></pre>
+<ol start="5">
+<li>Now since we no longer require the experimental branch we can delete it:</li>
+</ol>
+<pre><code>git branch -d experimental
+</code></pre>
+<ol start="6">
+<li>To see the branches in your repository you can run : <code>git branch</code> command.</li>
+</ol>
+</div>
+</body>
+
+</html>
